@@ -96,6 +96,9 @@ ul#nav li.current a {
     border-color: #2F2D2E;
     border-color: rgba(150, 150, 150, .1);
 }
+.main-div .intro-name-text img {
+    content: url('../assets/images/rahulKumar.png');
+}
 ul {
     list-style: none outside;
 }

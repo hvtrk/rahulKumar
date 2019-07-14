@@ -1,90 +1,85 @@
-<ngx-spinner
-bdOpacity = 0.9
-bdColor = "#333"
-size = "large"
-color = "#2ecc71"
-type = "ball-atom"
-[fullScreen] = "true"
->
+<ngx-spinner bdOpacity=0.9 bdColor="#333" size="large" color="#2ecc71" type="ball-atom" [fullScreen]="true">
 </ngx-spinner>
- <!-- Start #nav -->
- <nav id="nav-wrap" class="" style="display: block;">
-  <!-- <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+<!-- Start #nav -->
+<nav id="nav-wrap" class="" style="display: block;">
+    <!-- <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
   <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a> -->
-  <ul id="nav" class="nav">
-      <li [ngClass]="{'current': home}">
-          <a class="smoothscroll">Home</a>
-      </li>
-      <li [ngClass]="{'current': about}">
-          <a class="smoothscroll">About</a>
-      </li>
-      <li [ngClass]="{'current': tech}">
-          <a class="smoothscroll">Technology</a>
-      </li>
-      <li [ngClass]="{'current': service}">
-          <a class="smoothscroll">Works</a>
-      </li>
-      <li [ngClass]="{'current': blog}">
-          <a class="smoothscroll">Blog</a>
-      </li>
-      <li [ngClass]="{'current': contact}">
-          <a class="smoothscroll">Contact</a>
-      </li>
-  </ul>
+    <ul id="nav" class="nav">
+        <li [ngClass]="{'current': home}">
+            <a href="/" class="smoothscroll">Home</a>
+        </li>
+        <li [ngClass]="{'current': about}">
+            <a href="/about" class="smoothscroll">About</a>
+        </li>
+        <li [ngClass]="{'current': tech}">
+            <a href="/tech" class="smoothscroll">Technology</a>
+        </li>
+        <li [ngClass]="{'current': service}">
+            <a href="/service" class="smoothscroll">Works</a>
+        </li>
+        <li [ngClass]="{'current': blog}">
+            <a href="/blog" class="smoothscroll">Blog</a>
+        </li>
+        <li [ngClass]="{'current': contact}">
+            <a href="/contact" class="smoothscroll">Contact</a>
+        </li>
+    </ul>
 </nav>
 <!-- End #nav -->
 <main>
-  <section id="intro">
-      <div class="main-div">
-          <div class="intro-name">
-              <div class="intro-name-text">
-                      <img src="../../assets/images/rahulKumar.png" alt="">
-                  <h1>
-                      I'm Rahul Kumar.
-                  </h1>
-                  <h3>
-                      I'm a <strong>New Delhi</strong> based <strong>Software Developer</strong> creating
-                      awesome and effective applications for companies of all sizes around the globe.
-                      Let's chat and learn more about me.
-                      <br>
-                      Ping me here 
-                      <span>
-                          <a href="mailto:dr.rahulk95@gmail.com">dr.rahulk95@gmail.com</a>
-                      </span>
-                  </h3>
-                  <hr>
-                  <ul class="social">
-                      <li><a target="_blank" href="www.facebook.com/dr.rk47"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li><a target="_blank" href="www.linkedin.com/in/dr-rahulk95"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
-                      <li><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li>
-                      <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-                      <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </section>
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="main-div">
+            <div class="intro-name">
+                <div class="intro-name-text">
+                    <img alt="">
+                    <h1>
+                        I'm Rahul Kumar.
+                    </h1>
+                    <h3>
+                        I'm a <strong>New Delhi</strong> based <strong>Software Developer</strong> creating
+                        awesome and effective applications for companies of all sizes around the globe.
+                        Let's chat and learn more about me.
+                        <br>
+                        Ping me here
+                        <span>
+                            <a href="mailto:dr.rahulk95@gmail.com">dr.rahulk95@gmail.com</a>
+                        </span>
+                    </h3>
+                    <hr>
+                    <ul class="social">
+                        <li><a target="_blank" href="www.facebook.com/dr.rk47"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a target="_blank" href="www.linkedin.com/in/dr-rahulk95"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                        <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
-  <div class="">
-    <div class="twelve columns">
-      <ul class="social-links">
-        <li><a target="_blank" href="www.facebook.com/dr.rk47"><i class="fa fa-facebook"></i></a></li>
-        <li><a target="_blank" href="www.linkedin.com/in/dr-rahulk95"><i class="fa fa-linkedin"></i></a></li>
-        <li><a target="_blank" href=""><i class="fa fa-instagram"></i></a></li>
-        <li><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li>
-        <!-- <li><a target="_blank" href="#"><i class="fa fa-dribbble"></i></a></li> -->
-        <!-- <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li> -->
-      </ul>
-      <ul class="copyright">
-        <li>© Copyright 2019 HevenTech</li>
-        <li>Design by <a title="HevenTech" target="_blank" href="#">HevenTech Pvt. Ltd.</a></li>
-      </ul>
+    <div class="">
+        <div class="twelve columns">
+            <ul class="social-links">
+                <li><a target="_blank" href="www.facebook.com/dr.rk47"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="www.linkedin.com/in/dr-rahulk95"><i class="fa fa-linkedin"></i></a></li>
+                <li><a target="_blank" href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li>
+                <!-- <li><a target="_blank" href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                <!-- <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li> -->
+            </ul>
+            <ul class="copyright">
+                <li>© Copyright 2019 HevenTech</li>
+                <li>Design by <a title="HevenTech" target="_blank" href="#">HevenTech Pvt. Ltd.</a></li>
+            </ul>
+        </div>
+        <div id="go-top"><a class="smoothscroll" title="Back to Top" (click)="gotoTop()">
+                <i class="fa fa-chevron-circle-up" aria-hidden="true"></i> </a>
+        </div>
     </div>
-    <div id="go-top"><a class="smoothscroll" title="Back to Top" (click)="gotoTop()">
-        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i> </a>
-    </div>
-  </div>
 </footer>
