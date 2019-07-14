@@ -1,0 +1,265 @@
+/* ===========================================NavBar CSS -> {Start}=========================================== */
+/* Navigation Styling */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+/* nav-wrap */
+#nav-wrap {
+    background-color: #353b48;
+    font: 12px 'opensans-bold', sans-serif;
+    margin: 0 auto;
+    min-width: 100%;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    z-index: 100;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.opaque { background-color: #333; }
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn {
+    display: none;
+}
+
+ul#nav {
+    min-height: 48px;
+    width: auto;
+    /* center align the menu */
+    text-align: center;
+}
+
+ul#nav li {
+    position: relative;
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+    /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active {
+    background-color: transparent !important;
+}
+
+ul#nav li.current a {
+    color: #F06000;
+}
+/* ===========================================NavBar CSS -> {End}=========================================== */
+
+/* ===========================================Body CSS -> {Start}=========================================== */
+/* Intro Section */
+#intro {
+    /* background-color: white; */
+    padding-top: 3em;
+    background-image: url('../assets/images/intro_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-div { 
+    margin: auto;
+    font-size: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.main-div .intro-name {
+    display: inline-block;
+    /* vertical-align: middle; */
+ }
+
+.main-div .intro-name-text hr {
+    width: 60%;
+    height: 2px;
+    margin: 18px auto 24px auto;
+    border-radius: 12em;
+    border-color: #2F2D2E;
+    border-color: rgba(150, 150, 150, .1);
+}
+ul {
+    list-style: none outside;
+}
+
+li {
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+
+.main-div .intro-name-text h3 span,
+.main-div .intro-name-text h3 a {
+   color: #fff;
+}
+/* Name and info Styling */
+.intro-name {
+    display: grid;
+    margin: auto;
+    text-align: center;
+}
+
+.intro-name h1 {
+    position: relative;
+    font: 90px/1.1em 'opensans-bold', sans-serif;
+    color: #ecf0f1;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+}
+
+.intro-name h3 {
+    font: 20px/1.9em 'librebaskerville-regular', serif;
+    color: #dcdde1;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 1.5em;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0);
+}
+.intro-name h3 strong {
+    font: 2em 'librebaskerville-regular', serif;
+    font-weight: bolder;
+    color: #f5f6fa;
+    text-shadow: 0px 1px 2px rgb(161, 157, 157);
+}
+.intro-name h3 span:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.4em;
+}
+
+.social {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+
+.intro-name .social li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+    line-height: 18px;
+}
+
+/* ===========================================Body CSS -> {End}=========================================== */
+
+/* ===========================================Footer CSS -> {Start}=========================================== */
+footer {
+    background-color: #2c3e50;
+    padding-top: 48px;
+    color: #ecf0f1;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+
+footer a, footer a:visited {
+    color: #f5f6fa;
+}
+
+footer a:hover, footer a:focus {
+    color: #4cd137;
+}
+
+/* copyright */
+
+footer .copyright {
+    margin: 0;
+    padding: 0 0 1em 0;
+}
+
+footer .copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+.ie footer .copyright li {
+    display: inline;
+}
+
+footer .copyright li:before {
+    content: "\2022";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #095153;
+}
+
+footer .copyright li:first-child:before {
+    display: none;
+}
+
+/* social links */
+
+footer .social-links {
+    margin: 18px 0 30px 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+footer .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #F06000;
+}
+
+footer .social-links li:first-child {
+    margin-left: 0;
+}
+
+/* Go To Top Button */
+
+#go-top {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+#go-top a {
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #353b48;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-size: 3em;
+    line-height: 60px;
+    border-radius: 100%;
+}
+
+#go-top a:hover {
+    background-color: #0F9095;
+}
+/* ===========================================Footer CSS -> {End}=========================================== */

@@ -266,6 +266,9 @@ Apache-2.0
 @angular/core
 MIT
 
+ngx-spinner
+MIT
+
 @angular/common
 MIT
 
