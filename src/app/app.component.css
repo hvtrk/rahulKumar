@@ -97,7 +97,7 @@ ul#nav li.current a {
     border-color: rgba(150, 150, 150, .1);
 }
 .main-div .intro-name-text img {
-    content: url('../assets/images/rahulKumar.png');
+    content: url('../assets/images/rahulKumar.PNG');
 }
 ul {
     list-style: none outside;
