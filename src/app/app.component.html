@@ -6,22 +6,22 @@
   <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a> -->
     <ul id="nav" class="nav">
         <li [ngClass]="{'current': home}">
-            <a href="/" class="smoothscroll">Home</a>
+            <a (click)="changeRoute('/')" href="#intro" class="smoothscroll">Home</a>
         </li>
         <li [ngClass]="{'current': about}">
-            <a href="/about" class="smoothscroll">About</a>
+            <a (click)="changeRoute('/about')" href="#about" class="smoothscroll">About</a>
         </li>
         <li [ngClass]="{'current': tech}">
-            <a href="/tech" class="smoothscroll">Technology</a>
+            <a (click)="changeRoute('/tech')" href="#tech" class="smoothscroll">Technology</a>
         </li>
         <li [ngClass]="{'current': service}">
-            <a href="/service" class="smoothscroll">Works</a>
+            <a (click)="changeRoute('/service')" href="#service" class="smoothscroll">Works</a>
         </li>
         <li [ngClass]="{'current': blog}">
-            <a href="/blog" class="smoothscroll">Blog</a>
+            <a (click)="changeRoute('/blog')" href="#blog" class="smoothscroll">Blog</a>
         </li>
         <li [ngClass]="{'current': contact}">
-            <a href="/contact" class="smoothscroll">Contact</a>
+            <a (click)="changeRoute('/contact')" href="#contact" class="smoothscroll">Contact</a>
         </li>
     </ul>
 </nav>
@@ -71,13 +71,15 @@
             </span>
             <span class="body">
                 <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    I am <strong>Rahul Kumar</strong> a <em>Software Developer</em>, <strong><em>Programmer</em></strong> at heart and an <strong><em>Innovator</em></strong>. Loves solving new problems and learning new things. A dedicated and hardworking individual. <strong><em>Strong communication, collaboration & interpersonal skills</em></strong> with proficiency in grasping new technical concepts quickly and utilizing them in an effective manner.
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Have experience working with various technologies such as <strong>JavaScript</strong>, <strong>NodeJs</strong>, <strong>Angular 2</strong>, <strong>Sql server</strong>, <strong>Java (JSE)</strong>, etc.
+                    Strong analytical and documentation skills accompanied by problem solving skills and abilities in handling multiple priorities, with a bias for action a genuine interest in personal and professional development.
+                    <br>
+                    <span style="text-align: center;">
+                            An active sportsman loves to play <strong><em>Cricket</em></strong> and a national level <strong><em>Karate (Shitō-ryū)</em></strong> and <strong><em>Teakwando</em></strong> player.
+                    </span>
                 </p>
             </span>
         </div>
@@ -104,7 +106,7 @@
                         June 2018</span>
                     <p>
                         I have completed my bachelor's degree in Computer Science and Engineering, from <a
-                            href="http://sliet.ac.in/"><strong>Sant Longowal Institute of Engineering and Technology
+                            href="http://sliet.ac.in/" target="_blank"><strong>Sant Longowal Institute of Engineering and Technology
                                 (SLIET)</strong></a>, situated in Punjab in the year 2018.
                     </p>
                 </div>
@@ -117,7 +119,7 @@
                         June 2015</span>
                     <p>
                         I have completed my diploma's degree in Electronics and Communication Engineering, from <a
-                            href="http://sliet.ac.in/"><strong>Sant Longowal Institute of Engineering and Technology
+                            href="http://sliet.ac.in/" target="_blank"><strong>Sant Longowal Institute of Engineering and Technology
                                 (SLIET)</strong></a>, situated in Punjab in the year 2015.
                     </p>
                 </div>
@@ -130,7 +132,7 @@
                         April 2013</span>
                     <p>
                         I have completed my schooling in Computer Science stream, from <a
-                            href="http://www.kvmankhurd.org/"><strong>Kendriya Vidyalaya Mankhurd</strong></a>, situated
+                            href="http://www.kvmankhurd.org/" target="_blank"><strong>Kendriya Vidyalaya Mankhurd</strong></a>, situated
                         in Mumbai in the year 2015.
                     </p>
                 </div>
@@ -145,39 +147,88 @@
                         </i>
                         September 2018</span>
                     <p>
-                        I have been working as a <strong>Software Developer</strong> at <a
-                            href="https://www.nethues.com/"><strong>Nethues Technologies (P) Ltd.</strong></a>, in
-                        Rohini sector-3, New Delhi since September 2018.
+                        I have been working as a <strong>Software Developer (FullStack)</strong> at <a
+                            href="https://www.nethues.com/" target="_blank"><strong>Nethues Technologies (P) Ltd.</strong></a>, in
+                        Rohini sector-3, New Delhi since September 2018. I have worked here as MEAN developer.
                     </p>
                     <div class="list">
                         Here at Nethues i have worked on technologies like,
                         <ul>
-                            <li>Meanstack</li>
-                            <li>C#</li>
-                            <li>Python</li>
+                            <li style="color: #F97F51">Meanstack</li>
+                            <li style="color: #F97F51">C#</li>
+                            <li style="color: #F97F51">Python</li>
                         </ul>
                         I have worked on many great projects here, listed as below.
                         <ul>
-                            <li><a href="http://qunote.newsoftdemo.info:8043">Qunote 3.0</a> (The case notes system) <br>
-                                Qunote is a secure case management and clincial records system designed around the needs of those working in the case management, therapy and rehabilitation industries. The system streamlines day-to-day tasks such as the entry and storage of clinical notes, timesheets, expenses and invoicing.
+                            <li><a style="color: #F97F51" href="http://qunote.newsoftdemo.info:8043" target="_blank">Qunote 3.0 (The case notes system)</a><br>
+                                <a href="https://www.qunote.com/" target="_blank">Qunote</a> is a secure case management and clincial records system designed around the needs of those working in the case management, therapy and rehabilitation industries. The system streamlines day-to-day tasks such as the entry and storage of clinical notes, timesheets, expenses and invoicing.
                             </li>
-                            <li>...</li>
-                            <li>...</li>
+                            <li> <section style="color: #F97F51" >...</section></li>
+                            <li> <section style="color: #F97F51" >...</section></li>
                         </ul>
                     </div>
                 </div>
                 <hr style="background-color: chartreuse; size: 200%; width: 110%; margin-left: -32%;">
             </div>
             <div class="skill-details">
-                <div class="skill-description"></div>
-                <div class="skill1"></div>
-                <div class="skill2"></div>
-                <div class="skill3"></div>
-                <hr style="background-color: chartreuse; size: 200%; width: 110%; margin-left: -32%;">
+                <!-- <div class="skill-description"></div> -->
+                <div class="JavaScript">
+                    <h4>
+                        JavaScript
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="Python3">
+                    <h4>
+                        Python3
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="core-java">
+                    <h4>
+                        Core Java
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="java-swings">
+                    <h4>
+                        Java Swings
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="my-sql">
+                    <h4>
+                        MySQL
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="c-plus">
+                    <h4>
+                        C++
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 56%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
 </main>
 <footer>
     <div class="">

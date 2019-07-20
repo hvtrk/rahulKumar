@@ -17,61 +17,64 @@ export class AppComponent {
     private spinner: NgxSpinnerService,
     ) {
     this.spinner.show();
-      if (window.location) {
-        console.log(window.location.pathname);
-        switch (window.location.pathname) {
-          case '/about':
-            this.about = true;
-            this.home = false;
-            this.tech = false;
-            this.service = false;
-            this.blog = false;
-            this.contact = false;
-            break;
-          case '/':
-            this.home = true;
-            this.about = false;
-            this.tech = false;
-            this.service = false;
-            this.blog = false;
-            this.contact = false;
-            break;
-          case '/technology':
-            this.tech = true;
-            this.about = false;
-            this.home = false;
-            this.service = false;
-            this.blog = false;
-            this.contact = false;
-            break;
-          case '/service':
-            this.service = true;
-            this.about = false;
-            this.home = false;
-            this.tech = false;
-            this.blog = false;
-            this.contact = false;
-            break;
-          case '/blog':
-            this.blog = true;
-            this.about = false;
-            this.home = false;
-            this.tech = false;
-            this.service = false;
-            this.contact = false;
-            break;
-          case '/contact':
-            this.contact = true;
-            this.about = false;
-            this.home = false;
-            this.tech = false;
-            this.service = false;
-            this.blog = false;
-            break;
-          default:
-            break;
-        }
+    this.changeRoute('/');
+  }
+  changeRoute(pathname) {
+    if (pathname) {
+      console.log(pathname);
+      switch (pathname) {
+        case '/about':
+          this.about = true;
+          this.home = false;
+          this.tech = false;
+          this.service = false;
+          this.blog = false;
+          this.contact = false;
+          break;
+        case '/':
+          this.home = true;
+          this.about = false;
+          this.tech = false;
+          this.service = false;
+          this.blog = false;
+          this.contact = false;
+          break;
+        case '/technology':
+          this.tech = true;
+          this.about = false;
+          this.home = false;
+          this.service = false;
+          this.blog = false;
+          this.contact = false;
+          break;
+        case '/service':
+          this.service = true;
+          this.about = false;
+          this.home = false;
+          this.tech = false;
+          this.blog = false;
+          this.contact = false;
+          break;
+        case '/blog':
+          this.blog = true;
+          this.about = false;
+          this.home = false;
+          this.tech = false;
+          this.service = false;
+          this.contact = false;
+          break;
+        case '/contact':
+          this.contact = true;
+          this.about = false;
+          this.home = false;
+          this.tech = false;
+          this.service = false;
+          this.blog = false;
+          break;
+        default:
+          break;
       }
+    }
   }
   gotoTop() {
     window.scroll(0, 0);
